@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<title>page2</title>
+<th:div th:class="header" th:include="layout/header"></th:div>
+</head>
+<body>
+	<h3>My Second Page...</h3>
+	<div>
+		<div
+			th:text="|Hello ${user.firstname} ${user.lastname}, please save and share your memories.|"></div>
+		<div>[[${user.username}]]</div>
+		<table>
+			<tr th:each="item : ${items}">
+				<td th:text="${item}"></td>
+			</tr>
+		</table>
+		<table>
+			<tr th:each="profile : ${userProfiles}">
+				<td th:text="${profile.cellphone}"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+<footer>
+	<div th:insert="fragments :: footer"></div>
+</footer>
+</html>
