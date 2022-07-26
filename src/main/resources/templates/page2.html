@@ -10,18 +10,18 @@
 	<h3>My Second Page...</h3>
 	<div>
 		<div
-			th:text="|Hello ${user.firstname} ${user.lastname}, please save and share your memories.|"></div>
+			th:text="|Hello ${user.username}, please save and share your memories.|"></div>
 		<div>[[${user.username}]]</div>
-		<table>
+<!-- 		<table>
 			<tr th:each="item : ${items}">
 				<td th:text="${item}"></td>
 			</tr>
-		</table>
-		<table>
+		</table> -->
+<!-- 		<table>
 			<tr th:each="profile : ${userProfiles}">
 				<td th:text="${profile.cellphone}"></td>
 			</tr>
-		</table>
+		</table> -->
 	</div>
 </body>
 <footer>

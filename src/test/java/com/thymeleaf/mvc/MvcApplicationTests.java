@@ -21,6 +21,7 @@ class MvcApplicationTests {
 	void getIndex() {
 		String page = mc.index();
 		assertAll(() -> assertEquals("index", page));
+		System.out.println("test index");
 	}
 
 }
