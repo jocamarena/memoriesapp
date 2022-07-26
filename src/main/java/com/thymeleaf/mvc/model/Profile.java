@@ -7,9 +7,9 @@ public class Profile {
 	private Date datecreated;
 	private String cellphone;
 	private Boolean isValid;
-	private User owner;
+	private Users owner;
 	public Profile() {};
-	public Profile(Date datecreated, String cellphone, Boolean isValid, User owner) {
+	public Profile(Date datecreated, String cellphone, Boolean isValid, Users owner) {
 		this.datecreated = datecreated;
 		this.cellphone = cellphone;
 		this.isValid = isValid;
@@ -33,10 +33,10 @@ public class Profile {
 	public void setIsValid(Boolean isValid) {
 		this.isValid = isValid;
 	}
-	public User getOwner() {
+	public Users getOwner() {
 		return owner;
 	}
-	public void setOwner(User owner) {
+	public void setOwner(Users owner) {
 		this.owner = owner;
 	}
 }
